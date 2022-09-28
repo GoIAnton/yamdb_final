@@ -36,17 +36,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Go to Dockerfile
-        run: |
-          ls
-          cd api_yamdb/
-          ls
-      - name: Chech file
-        run: |
-          ls
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
+          file: ./api_yamdb/
           push: true
           tags: antongol/api_yamdb:latest
 
