@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    build: ./yamdb_final/api_yamdb/
+    image: antongol/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
