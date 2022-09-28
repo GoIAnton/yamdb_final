@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: antongol/api_yamdb:latest
+          tags: antongol/api_yamdb
 
   deploy:
     runs-on: ubuntu-latest
