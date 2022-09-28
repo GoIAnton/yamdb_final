@@ -29,10 +29,9 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Check server
+      - name: Go to Dockerfile
         run: |
-          ls
-          cd yamdb_final/
+          cd api_yamdb/
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1 
       - name: Login to Docker
