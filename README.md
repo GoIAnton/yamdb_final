@@ -45,7 +45,7 @@ docker-compose exec web python manage.py collectstatic --no-input
 
 ### IP сервера: 
 
-84.252.137.29
+51.250.111.99
 
 ## API эндпоинты
 
