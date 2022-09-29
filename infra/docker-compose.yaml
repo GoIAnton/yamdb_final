@@ -12,6 +12,7 @@ services:
     image: antongol/api_yamdb:latest
     restart: always
     volumes:
+      - ../api_yamdb/static/redoc.yaml:/var/html/static/redoc.yaml
       - static_value:/app/static/
       - media_value:/app/media/
     depends_on:
